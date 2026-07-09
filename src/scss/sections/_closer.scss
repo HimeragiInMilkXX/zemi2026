@@ -1,0 +1,137 @@
+@use "../base";
+
+.closer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and ( max-width: 640px ) {
+        gap: 20px !important;
+    }
+
+    h3, h3>*{
+
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 1.4;
+        color: base.$secondary-color;
+
+        @media screen and ( max-width: 640px ) {
+            font-size: 2rem;
+        }
+
+    }
+
+    .days-until {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+
+        .days {
+
+            display: flex;
+            align-items: end;
+            gap: 2px;
+
+            position: relative;
+
+            user-select: none;
+
+            .days-shatter-overlay {
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: -5px;
+                z-index: 10;
+                background-color: #000000;
+
+            }
+
+            .days-shatter-fragment {
+
+                position: absolute;
+                backface-visibility: hidden;
+                pointer-events: none;
+
+            }
+            
+            @media screen and ( max-width: 640px ) {
+                justify-content: center;
+            }
+
+            .variable {
+
+                flex-grow: 1;
+                font-size: 28rem;
+                color: base.$primary-color;
+                display: inline-block;
+                line-height: 325px;
+                position: relative;
+                left: -16px;
+
+                @media screen and ( max-width: 640px ) {
+                    font-size: 20rem;
+                    text-align: center;
+                    position: static;
+                    line-height: 260px;
+                }
+
+                @media screen and ( max-width: 430px ) {
+                    font-size: 14rem;
+                    line-height: 180px;
+                }
+
+            }
+
+            svg {
+                position: relative;
+                bottom: -0.2vw;
+
+                @media screen and ( max-width: 640px ) {
+                    display: none;
+                }
+            }
+
+        }
+
+        .names {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFFFFF40;
+
+            @media screen and ( max-width: 640px ) {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                justify-content: center;  /* center overall grid */
+                justify-items: center;    /* center items in their cells */
+                gap: 8px;
+            }
+
+            column-gap: 4px;
+
+            span {
+
+                font-weight: 500;
+                font-size: 1.5rem;
+
+                flex: 0 1 auto;
+
+                @media screen and ( max-width: 800px ) {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}

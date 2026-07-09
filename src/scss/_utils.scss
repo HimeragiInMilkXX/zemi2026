@@ -1,0 +1,25 @@
+@use "./base";
+
+.english {
+
+    font-family: "Archivo Black", sans-serif !important;
+
+}
+
+.detail-button {
+
+    display: flex;
+    gap: 14px;
+    background-color: base.$primary-color !important;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 0 100%, 0% 50%);
+    transition: all 0.35s;
+    cursor: pointer;
+
+    &:hover { opacity: 0.85; }
+
+    span { font-weight: bold; }
+    img { position: relative; top: 1px;}
+
+}

@@ -1,0 +1,74 @@
+@use "../base";
+
+.hero {
+
+    display: flex;
+    flex-direction: column;
+
+    h1, h1>*{
+
+        font-weight: 500;
+        color: base.$font-color;
+        font-size: 4rem;
+        letter-spacing: 1.5px;
+        line-height: 1.4;
+        position: relative;
+
+        @media screen and ( max-width: 480px ) {
+            font-size: 3rem;
+        }
+        
+        .greeting { position: relative; left: -10px; white-space: nowrap; }
+
+        .english { font-size: 1.3em; position: relative; top: 5px;}
+
+    }
+
+    .main-title {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .kuriya {
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .names {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFFFFF40;
+
+            @media screen and ( max-width: 640px ) {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                justify-content: center;  /* center overall grid */
+                justify-items: center;    /* center items in their cells */
+                gap: 8px;
+            }
+
+            column-gap: 4px;
+
+            span {
+
+                font-weight: 500;
+                font-size: 1.5rem;
+
+                flex: 0 1 auto;
+
+                @media screen and ( max-width: 800px ) {
+                    font-size: 1rem;
+                }
+
+            }
+
+        }
+
+    }
+
+}

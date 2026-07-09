@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 栗谷ゼミ ー 2026中間発表会 </title>
+    <link rel="icon" type="image/x-icon" href="src/assets/icon.png">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+
+    <!-- ライブラリ -->
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/delaunay.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js" defer></script>
+
+    <!-- スクリプト -->
+    <script src="src/js/generatedStyles.js" defer></script>
+    <script src="src/js/dateUpdate.js" defer></script>
+    <script src="src/js/memberCarousel.js" defer></script>
+    <script src="src/js/daysShatter.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-content">
+
+            <p class="countdown">
+
+                <span class="fixed english"> OPEN </span>
+                <span class="fixed english"> / </span>
+                <span class="time english" id="header-sync-time">FETCHING...</span>
+
+            </p>
+
+            <p class="zemi-name english"> <span class="long english">Web Direction & Design</span> <span class="short english" style="display: none;">Kuriya</span> </p>
+
+        </div>
+
+    </header>
+
+    <div class="main-container">
+
+        <section class="hero level-section" data-mtop="30" data-mbottom="134" data-gap="64">
+
+            <h1>
+
+                <span class="greeting">こんにちは。</span><br>
+                <span class="english" style="margin-right: 2px;">WEB</span>の世界を感じてみませんか？
+
+            </h1>
+
+            <div class="main-title">
+
+                <svg viewBox="0 0 1379 230" fill="none" xmlns="http://www.w3.org/2000/svg" class="kuriya">
+                    <path d="M1302.4 225.186L1292.91 193.438H1214.01L1204.52 225.186H1130.54L1212.7 0H1296.83L1379 225.186H1302.4ZM1229.07 143.033H1277.85L1254.28 62.8427H1252.97L1229.07 143.033Z" fill="#51FF00"/>
+                    <path d="M1067.17 225.186H994.829V137.796L905.461 0H988.609L1031.82 74.9531H1033.13L1076.34 0H1155.23L1067.17 137.796V225.186Z" fill="#51FF00"/>
+                    <path d="M803.434 225.186V0H875.779V225.186H803.434Z" fill="#51FF00"/>
+                    <path d="M759.137 69.0616C759.137 82.8084 755.427 95.246 748.007 106.374C740.587 117.503 729.784 125.685 715.599 130.922L765.684 225.186H684.5L644.563 143.033H617.72V225.186H545.375V0H683.191C699.34 0 713.089 3.16396 724.437 9.49187C736.004 15.6016 744.624 24.0024 750.298 34.6944C756.191 45.1682 759.137 56.6239 759.137 69.0616ZM685.482 72.0073C685.482 66.1158 683.518 61.2062 679.59 57.2785C675.662 53.3509 670.861 51.387 665.186 51.387H617.72V92.9549H665.186C670.861 92.9549 675.662 90.9911 679.59 87.0634C683.518 82.9175 685.482 77.8988 685.482 72.0073Z" fill="#51FF00"/>
+                    <path d="M496.924 134.523C496.924 165.289 487.213 188.746 467.79 204.894C448.367 221.041 420.76 229.114 384.97 229.114C349.179 229.114 321.463 221.041 301.822 204.894C282.399 188.746 272.688 165.289 272.688 134.523V0H345.033V133.541C345.033 146.197 348.415 156.343 355.181 163.98C361.946 171.399 371.766 175.109 384.642 175.109C397.518 175.109 407.339 171.29 414.104 163.653C421.088 156.016 424.579 145.978 424.579 133.541V0H496.924V134.523Z" fill="#51FF00"/>
+                    <path d="M152.546 0H242.241L161.385 92.6276L243.878 225.186H158.439L111.627 142.705L72.345 174.781V225.186H0V0H72.345V96.2279L152.546 0Z" fill="#51FF00"/>
+                </svg>
+
+                <div class="names">
+
+                    <span> ファンヨンハ </span>
+                    <span> 石川李桜 </span>
+                    <span> オスカー </span>
+                    <span> 芳賀玲緒奈 </span>
+                    <span> 寺尾七海 </span>
+                    <span> 成田千晴 </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <main>
+
+            <section class="level-section" data-mtop="26" data-mbottom="57" data-gap="50">
+
+                <h2 class="title">
+
+                    <span class="tag english"> LV.1 </span>
+                    <span class="content"> 先生紹介 </span>
+
+                </h2>
+
+                <div class="content" style="background-image: url(src/assets/kuriya.jpg)">
+
+                    <div class="description">
+
+                        <p class="name"> 栗谷 幸助 </p>
+                        <p class="position"> デジタルハリウッド 専任講師 </p>
+                        <p class="profession"> Webデザイナー </p>
+
+                    </div>
+
+                    <p class="title"> Webデザイン業界への夢先案内人 </p>
+
+                    <a href="https://www.dhw.ac.jp/faculty/teacher/kuriya-kosuke/" target="_blank">
+                        <button class="detail-button" data-size="20" data-ptb="14" data-plr="24">
+                            <span> 詳細ページを見る </span>
+                            <img src="./src/assets/arrow.svg" alt="" style="position: relative; scale: 0.9;">
+                        </button>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="level-section" data-mtop="121" data-mbottom="122" data-gap="50">
+
+                <h2 class="title">
+                    <span class="tag english"> LV.2 </span>
+                    <span class="content"> メンバー </span>
+                </h2>
+
+                <div class="content">
+                    <div class="embla-wrapper">
+                        <div class="embla__container">
+                            
+                            <div class="embla__slide member-card">
+                                <div class="avatar-holder">
+                                    <img src="./src/assets/avatars/yonha.png" alt="">
+                                    <p class="english-name">ファンヨンハ</p> 
+                                </div>
+                                <div class="card-info">
+                                    <p class="comment">韓国出身のヨンハ。Uiデザイン勉強中、ファッションとマンUが好き！</p>
+                                </div>
+                            </div>
+
+                            <div class="embla__slide member-card">
+                                <div class="avatar-holder">
+                                    <img src="./src/assets/avatars/ishikawa.png" alt="">
+                                    <p class="english-name">石川李桜</p> 
+                                </div>
+                                <div class="card-info">
+                                    <p class="comment">神奈川県出身のりおです！UIデザインをメインに学んでます！アイドルとかわいいキャラが大好き！♡</p>
+                                </div>
+                            </div>
+
+                            <div class="embla__slide member-card">
+                                <div class="avatar-holder">
+                                    <img src="./src/assets/avatars/oscar.png" alt="">
+                                    <p class="english-name">オスカー</p> 
+                                </div>
+                                <div class="card-info">
+                                    <p class="comment">香港出身のオスカー。プログラミング得意けどデザインまだ勉強中、なんと歌手目指している。</p>
+                                </div>
+                            </div>
+
+                            <div class="embla__slide member-card">
+                                <div class="avatar-holder">
+                                    <img src="./src/assets/avatars/haga.png" alt="">
+                                    <p class="english-name">芳賀玲緒奈</p> 
+                                </div>
+                                <div class="card-info">
+                                    <p class="comment">東京出身れおなです。ディズニー好きです！コードとデザイン両方勉強中！</p>
+                                </div>
+                            </div>
+
+                            <div class="embla__slide member-card">
+                                <div class="avatar-holder">
+                                    <img src="./src/assets/avatars/terao.png" alt="">
+                                    <p class="english-name">寺尾七海</p> 
+                                </div>
+                                <div class="card-info">
+                                    <p class="comment">福井県出身の七海です！コード周りは勉強中。ゲームとイラストとハンドメイドが趣味です〜</p>
+                                </div>
+                            </div>
+
+                            <div class="embla__slide member-card">
+                                <div class="avatar-holder">
+                                    <img src="./src/assets/avatars/narita.png" alt="">
+                                    <p class="english-name">成田千晴</p> 
+                                </div>
+                                <div class="card-info">
+                                    <p class="comment">千葉出身のちはる！！デザインとカピバラとゼルダの伝説がだーいすき！♡</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="level-section" data-mtop="109" data-mbottom="109" data-gap="61">
+
+                <h2 class="title">
+
+                    <span class="tag english"> LV.3 </span>
+                    <span class="content"> メンバーたちの作品 </span>
+
+                </h2>
+
+                <div class="content"> 
+                    <div class="works-grid">
+                        <div class="work-item">
+                            <a href="https://drive.google.com/file/d/1j7hYAHOMswwQ1HqKiBIO2eqKeHJUjzEc/view?usp=drive_link" target="_blank" class="work-thumb-link">
+                                <div class="work-thumbnail">
+                                <img src="src/assets/images/A21DC566_cover.png" alt="A21Dc566の作品">
+                                </div>
+                            </a>
+                            <div class="work-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="work-name">love me</p>
+                        </div>
+
+                        <div class="work-item">
+                            <a href="https://drive.google.com/file/d/1ckjuemUFEhNr4tAzjmsHzjYDT9bStq90/view?usp=drive_link" target="_blank" class="work-thumb-link">
+                                <div class="work-thumbnail">
+                                <img src="src/assets/images/A23DC019_cover.png" alt="A23DC019のサムネイル">
+                                </div>
+                            </a>
+                            <div class="work-dots">
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="work-name">66日間で習慣化を目指すアプリ</p>
+                        </div>
+
+                        <div class="work-item">
+                            <a href="https://drive.google.com/file/d/124gOdL8Ai5rkw75IO3RjzFH5S-DLmU3u/view?usp=drive_link" target="_blank" class="work-thumb-link">
+                                <div class="work-thumbnail">
+                                <img src="src/assets/images/A23DC529_cover.png" alt="A23DC529の作品のサムネイル">
+                                </div>
+                            </a>
+                            <div class="work-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="work-name">Grinote</p>
+                        </div>
+
+                        <div class="work-item">
+                            <a href="https://drive.google.com/file/d/1zEeEC29DgKMqnr0czBa9fuKLHQm7hmEb/view?usp=drive_link" target="_blank" class="work-thumb-link">
+                                <div class="work-thumbnail">
+                                <img src="src/assets/images/A23DC167_cover.png" alt="A23DC167の作品のサムネイル">
+                                </div>
+                            </a>
+                            <div class="work-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="work-name">はなにわ</p>
+                        </div>
+
+                        <div class="work-item">
+                            <a href="https://drive.google.com/file/d/1OTNYInjR8mLd7TOCekkl_pYCFphHTjAB/view?usp=drive_link" target="_blank" class="work-thumb-link">
+                                <div class="work-thumbnail">
+                                <img src="src/assets/images/A23DC147_cover.png" alt="A23DC147のサムネイル">
+                                </div>
+                            </a>
+                            <div class="work-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="work-name">Midnight Planet</p>
+                        </div>
+
+                        <div class="work-item">
+                            <a href="https://drive.google.com/file/d/1ifCzHT41qnTXhzrmIx9ckDoBBkGM92Sf/view?usp=drive_link" target="_blank" class="work-thumb-link">
+                                <div class="work-thumbnail">
+                                <img src="src/assets/images/A23DC159_cover.png" alt="A23DC159のサムネイル">
+                                </div>
+                            </a>
+                            <div class="work-dots">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot active"></span>
+                            </div>
+                            <p class="work-name">日本史のストーリー型学習サイト</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="level-section" data-mtop="109" data-mbottom="177" data-gap="110">
+
+                <h2 class="title">
+
+                    <span class="tag english"> LV.4 </span>
+                    <span class="content"> ゼミの活動 </span>
+
+                </h2>
+
+                <div class="content"> 
+                        <div class="activity-layout">
+                            
+                            <div class="activity-list">
+                                
+                                <div class="activity-item">
+                                    <div class="activity-dots">
+                                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                    </div>
+                                    <div class="activity-text">
+                                        <h3>ポートフォリオサイトデザインカンプ作成</h3>
+                                        <p>3年生3クォーター</p>
+                                    </div>
+                                </div>
+
+                                <div class="activity-item">
+                                    <div class="activity-dots">
+                                        <span class="dot"></span><span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+                                    </div>
+                                    <div class="activity-text">
+                                        <h3>noteなどのWebコンテンツでの情報発信</h3>
+                                        <p>3年生4クォーター</p>
+                                    </div>
+                                </div>
+
+                                <div class="activity-item">
+                                    <div class="activity-dots">
+                                        <span class="dot"></span><span class="dot"></span><span class="dot active"></span><span class="dot"></span>
+                                    </div>
+                                    <div class="activity-text">
+                                        <h3>卒業制作企画とプレゼンテーション</h3>
+                                        <p>4年生1クォーター</p>
+                                    </div>
+                                </div>
+
+                                <div class="activity-item">
+                                    <div class="activity-dots">
+                                        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot active"></span>
+                                    </div>
+                                    <div class="activity-text">
+                                        <h3>卒制中間発表会</h3>
+                                        <p>4年生2クォーター</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="image-cluster">
+                                <div class="circle-img thumb-top-left"><img src="src/assets/images/zemi_syuugou1.jpg" alt="ゼミ活動1"></div>
+                                <div class="circle-img thumb-center"><img src="src/assets/images/zemi_syuugou2.jpg" alt="ゼミ活動2"></div>
+                                <div class="circle-img thumb-bottom-right"><img src="src/assets/images/zemisyoukai.jpg" alt="ゼミ活動3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <section class="closer level-section" data-mtop="151" data-mbottom="192" data-gap="139">
+
+            <h3 class="closer-title"> 中間発表会まで後... </h3>
+
+            <section class="days-until">
+
+                <div class="days">
+
+                    <span class="variable english" id="closer-sync-time">00</span>
+
+                    <svg viewBox="0 0 826 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M729.381 0C755.547 0 777.054 5.35204 793.903 16.0561C810.752 26.562 819.375 42.2216 819.771 63.0351V66.6031H758.223V65.4138C758.223 59.467 756.042 54.5115 751.681 50.547C747.32 46.5825 740.68 44.6003 731.76 44.6003C723.038 44.6003 716.298 45.8887 711.541 48.4657C706.982 51.0425 704.702 54.2141 704.702 57.9804C704.702 63.3324 707.874 67.2969 714.217 69.8738C720.56 72.4507 730.769 75.1267 744.843 77.9018C761.295 81.2716 774.774 84.8397 785.28 88.6059C795.984 92.1739 805.301 98.1206 813.23 106.446C821.159 114.771 825.222 126.07 825.42 140.342C825.42 164.526 817.194 182.465 800.742 194.16C784.487 205.855 762.683 211.703 735.328 211.703C703.414 211.703 678.537 206.351 660.697 195.647C643.055 184.943 634.234 166.012 634.234 138.856H696.377C696.377 149.163 699.053 156.101 704.405 159.669C709.757 163.039 718.082 164.724 729.381 164.724C737.706 164.724 744.545 163.832 749.897 162.048C755.448 160.264 758.223 156.597 758.223 151.046C758.223 146.091 755.15 142.424 749.005 140.045C743.059 137.468 733.246 134.792 719.569 132.017C702.918 128.449 689.142 124.782 678.24 121.015C667.337 117.051 657.822 110.609 649.695 101.689C641.568 92.7686 637.505 80.677 637.505 65.4138C637.505 43.0145 646.127 26.562 663.373 16.0561C680.816 5.35204 702.819 0 729.381 0Z" fill="#51FF00"/>
+                        <path d="M551.768 208.133H486.057V128.745L404.884 3.56641H480.407L519.656 71.6562H520.845L560.093 3.56641H631.751L551.768 128.745V208.133Z" fill="#51FF00"/>
+                        <path d="M355.717 208.133L347.094 179.292H275.437L266.814 208.133H199.616L274.247 3.56641H350.663L425.294 208.133H355.717ZM289.114 133.502H333.417L312.009 60.6548H310.82L289.114 133.502Z" fill="#51FF00"/>
+                        <path d="M88.6059 3.56641C160.165 3.56641 195.944 37.6608 195.944 105.85C195.944 174.039 160.165 208.133 88.6059 208.133H0V3.56641H88.6059ZM65.7111 159.073H87.4165C114.97 159.073 128.746 144.305 128.746 114.77V96.9297C128.746 67.3944 114.97 52.6267 87.4165 52.6267H65.7111V159.073Z" fill="#51FF00"/>
+                    </svg>
+
+
+                </div>
+
+                <div class="names">
+
+                    <span> ファンヨンハ </span>
+                    <span> 石川李桜 </span>
+                    <span> オスカー </span>
+                    <span> 芳賀玲緒奈 </span>
+                    <span> 寺尾七海 </span>
+                    <span> 成田千晴 </span>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </div>
+
+    <footer class="english"> Copyright Yongan@2026 </footer>
+
+</body>
+
+</html>

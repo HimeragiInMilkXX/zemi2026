@@ -1,0 +1,12 @@
+@use "./base";
+@use "./reset";
+@use "./utils";
+@use "./layout";
+
+@use "./sections/先生紹介";
+@use "./sections/メンバー紹介";
+@use "./sections/メンバー作品";
+@use "./sections/ゼミ活動";
+
+@use "./sections/hero";
+@use "./sections/closer"
