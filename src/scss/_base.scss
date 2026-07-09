@@ -58,6 +58,7 @@ header {
         .zemi-name {
 
             color: $primary-color;
+            cursor: pointer;
 
             @media screen and ( max-width: 480px ) {
                 

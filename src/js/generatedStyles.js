@@ -25,3 +25,26 @@ detailButton.forEach( button => {
     button.querySelector("span").style.fontSize = fontSize;
 
 })
+
+const zemiName = document.querySelector(".zemi-name");
+
+if (zemiName) {
+    zemiName.tabIndex = 0;
+    zemiName.setAttribute("role", "button");
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+    zemiName.addEventListener("click", scrollToTop);
+
+    zemiName.addEventListener("keydown", event => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+
+        event.preventDefault();
+        scrollToTop();
+    });
+}
