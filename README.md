@@ -1,6 +1,6 @@
 # 告知サイト作業ガイドライン
 
-リポジトリ: https://github.com/HimeragiInMilkXX/middlePresent
+リポジトリ: https://github.com/HimeragiInMilkXX/zemi2026
 
 ---
 
